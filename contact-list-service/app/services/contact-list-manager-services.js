@@ -1,4 +1,4 @@
-import ContactListManagerModel from "../models/contact-list-manager-model";
+import ContactListManagerModel from "../models/contact-list-manager-model.js";
 
 // Service to fetch all the contacts from the DB.
 export const fetchAllContact = async () => {

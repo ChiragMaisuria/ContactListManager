@@ -1,6 +1,6 @@
 import * as ContactListServices from '../services/contact-list-manager-services.js';
 import { setResponse, setError } from './request-handler.js';
-import ContactListManagerModel from '../models/contact-list-manager-models.js';
+import ContactListManagerModel from '../models/contact-list-manager-model.js';
 
 // Controller: To get all the contact.
 export const getAllContact = async (request, response) => {

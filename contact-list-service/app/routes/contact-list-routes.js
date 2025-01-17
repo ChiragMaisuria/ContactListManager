@@ -1,5 +1,5 @@
 import express from "express";
-import * as ContactListController from "../controllers/contact-list-manager-controllers.js";
+import * as ContactListController from "../controllers/contact-list-manager-controller.js";
 
 const router = express.Router();
 
