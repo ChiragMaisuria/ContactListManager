@@ -4,7 +4,7 @@ import ContactListManagerModel from '../models/contact-list-manager-model.js';
 
 // Controller: To get all the contact.
 export const getAllContact = async (request, response) => {
-    console.log("getAllContact");
+    // console.log("getAllContact");
     try{
         const allContacts = await ContactListServices.fetchAllContact();
         setResponse(allContacts, response);
@@ -27,10 +27,10 @@ export const addNewContact = async (request, response) => {
 
 // Controller: To handle deletion of a contact.
 export const removeContact = async (request, response) => {
-    console.log("removeContact");
+    // console.log("removeContact");
     try{
         const deleteContactId = request.query.id;
-        console.log("idContactDelete: ", deleteContactId);
+        // console.log("deleteContactId: ", deleteContactId);
         const deleteResponseFromServices = await ContactListServices.deleteContact(deleteContactId);
         setResponse(deleteResponseFromServices, response);
     }catch(err){
@@ -40,10 +40,10 @@ export const removeContact = async (request, response) => {
 
 // Controller: To handle the search functionality.
 export const getContactByNameOrEmail = async (request, response) => {
-    console.log("getContactByNameOrEmail");
+    // console.log("getContactByNameOrEmail");
     try{
         const searchedKeyword = request.params.searchedKeyword;
-        console.log("searchedKeyword: ", searchedKeyword);
+        // console.log("searchedKeyword: ", searchedKeyword);
         const fetchedContacts = await ContactListServices.fetchContactByNameOrEmail(searchedKeyword);
         setResponse(fetchedContacts, response);
     }catch(err){
