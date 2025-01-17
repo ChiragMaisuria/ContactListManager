@@ -7,7 +7,7 @@ export const fetchAllContact = async () => {
 }
 
 // Service to save a new contact in the DB.
-export const saveContact = async (newContact) => {
+export const saveNewContact = async (newContact) => {
     const contactSaved = await newContact.save();
     return contactSaved;
 }
